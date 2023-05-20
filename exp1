@@ -1,0 +1,20 @@
+# 1.Write a Python Program to Calculate Simple Interest. 
+  
+ p=int(input("Enter principal amount: ")) 
+ r=int(input("Enter rate of interest: ")) 
+ t=int(input("Number of months: ")) 
+ s=(p*t*r)/100 
+ print("Simple interest is:",s) 
+  
+ ... 
+ output 1: 
+ Enter principal amount: 100000 
+ Enter rate of interest: 2 
+ Number of months: 12 
+ Simple interest is: 24000.0 
+ output 2: 
+ Enter principal amount: 1_0_000_000 
+ Enter rate of interest: 5 
+ Number of months: 12 
+ Simple interest is: 6000000 
+ ...
