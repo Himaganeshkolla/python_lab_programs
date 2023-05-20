@@ -1,0 +1,21 @@
+''' Question :- There is a JAR full of candies for sale at a mall counter. JAR has the capacity N that is JAR can contain maximum N candies when JAR is full. At any point of time. JAR can have M number of Candies where M<=N. Candies are served to the customers. JAR is never remaining empty as when last k candies are left. JAR if refilled with new candies in such a way that JAR get full. Write a code to implement above scenario. Display JAR at counter with available number of candies. Input should be the number of candies one customer can order at point of time. Update the JAR after each purchase and display JAR at Counter. Output should give number of Candies sold and updated number of Candiesin JAR.If Input is more than candies in JAR, return: “INVALID INPUT. ''' 
+ N=10 
+ k=int(input('enter no. of candies')) 
+ if k in range(1,6): 
+                 print('NUMBER OF CANDIES SOLD',k) 
+                 print("NUMBER OF CANDIES AVAILABLE",N-k) 
+ else: 
+                 print('INVALID INPUT') 
+                 print('No. of candies are ',N) 
+          
+ ''' 
+ Output 1 
+ enter no. of candies27 
+ INVALID INPUT 
+ No. of candies are 10 
+          
+ Output 2 
+ enter no. of candies4 
+ NUMBER OF CANDIES SOLD 4 
+ NUMBER OF CANDIES AVAILABLE 6 
+ '''
