@@ -1,4 +1,4 @@
-''' Question : Write a python program to find the sum of all the non-primes below hundred.'''
+''' Question : Write a python program to find the sum of all the non-primes below hundred '''
 
 print('enter an integer')
 n=int(input())
