@@ -1,1 +1,20 @@
+''' Question: Write a python program that uses function to find the sum of the even-valuedterms in the Fibonacci sequence whose values do not exceed ten thousand. '''
 
+def fib(k):
+a,b,s=0,1,0
+while(k>0):
+	print(a,end=’ ‘)
+if(a%2==0):
+            s=s+a
+        c=a+b
+        a=b
+        b=c
+        k=k-1
+print("\nEven valued fib. sumis",s)
+n=int(input('Enter an Integer'))
+fib(n)
+
+'''Output :
+
+
+'''
