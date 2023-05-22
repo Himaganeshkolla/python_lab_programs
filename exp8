@@ -1,0 +1,20 @@
+
+''' Question : Write a python program to compute GCD, LCM of two numbers (Each functionshouldn’t exceed one line use predefined module).'''
+
+from math import gcd
+a,b=int(input("enter first value")),int(input("enter Second value"))
+print("GCD is:",gcd(a,b))
+print("LCMis:",a*b//gcd(a,b))
+
+'''
+Output :
+enter first value5
+enter Second value6
+GCD is: 1
+LCMis: 30
+
+Outputenter first value321
+enter Second value3
+GCD is: 3
+LCMis: 321 
+'''
