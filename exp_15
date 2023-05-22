@@ -1,0 +1,27 @@
+''' Question :Write a python program to create a user-defined exception named “ShortInputException” that raises when the input text length is less than 3.'''
+
+class ShortInputException(Exception):
+    def __init__(self,name):
+        self.name=name
+class A:
+    def getdetails(self):
+        try:
+            n=input('Enter name ')
+            if(len(n)<3):
+                raise ShortInputException('Error')
+            else:
+                print('Name is:',n)
+        except ShortInputException as p:
+            print(p)
+s=A()
+s.getdetails()
+
+'''
+Output 1:
+Enter name himaganesh
+Name is: himaganesh
+
+Output 2:
+Enter name HG
+Error
+'''
