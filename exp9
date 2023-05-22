@@ -1,0 +1,51 @@
+''' Question : Develop python code to illustrate the usage of ‘itertools’ package.'''
+
+import itertools
+print("count() function")
+for i in itertools.count(10,10):
+	if(i==100):
+		break
+	else:
+		print(i,end=' ')
+print("cycle() function")	
+c=1
+for i in itertools.cycle("SRGEC"):
+	if(c>=5):
+		break
+	else:
+		c=c+1
+		print(i,end=' ')
+print("repeat() function")
+print(list(itertools.repeat(20,5)))		
+print("product() function")
+print(list(itertools.product('gec','IT','CSE')))
+a=[3,4]
+b=[10,20]
+print(list(itertools.product(a,b)))
+print("permutations() function")
+print(list(itertools.permutations("GEC")))
+print("Combinations() function")
+print(list(itertools.combinations('gec',2)))
+print("compress() function")
+print(list(itertools.compress('srgec',[1,0,1,1,0])))
+print("chain() function")
+print(list(itertools.chain([2,3,4],[10,29,30],[34])))
+
+'''
+Output:
+count() function
+10 20 30 40 50 60 70 80 90 cycle() function
+S R G E repeat() function
+[20, 20, 20, 20, 20]
+product() function
+[('g', 'I', 'C'), ('g', 'I', 'S'), ('g', 'I', 'E'), ('g', 'T', 'C'), ('g', 'T', 'S'), ('g', 'T', 'E'), ('e', 'I', 'C'), ('e', 'I', 'S'), ('e', 'I', 'E'), ('e', 'T', 'C'), ('e', 'T', 'S'), ('e', 'T', 'E'), ('c', 'I', 'C'), ('c', 'I', 'S'), ('c', 'I', 'E'), ('c', 'T', 'C'), ('c', 'T', 'S'), ('c', 'T', 'E')]      
+[(3, 10), (3, 20), (4, 10), (4, 20)]
+permutations() function
+[('G', 'E', 'C'), ('G', 'C', 'E'), ('E', 'G', 'C'), ('E', 'C', 'G'), ('C', 'G', 'E'), ('C', 'E', 'G')]  
+Combinations() function
+[('g', 'e'), ('g', 'c'), ('e', 'c')]
+compress() function
+['s', 'g', 'e']
+chain() function
+[2, 3, 4, 10, 29, 30, 34]
+'''
