@@ -1,0 +1,28 @@
+''' Queation :Write a function ball_collide that takes two balls as parameters and computes if they are colliding. Your function should return a Boolean representing whether or not the balls are colliding.
+Hint: Represent a ball on a plane as a tuple of (x, y, r), r being the radius
+if (distance between two balls centers) <= (sum of their radii) then (they are colliding)'''
+
+import math
+def ball_collide(t1,t2):
+        x1,y1,r1=t1[0],t1[1],t1[2]
+        x2,y2,r2=t2[0],t2[1],t2[2]
+        d=math.sqrt((x2-x1)**2)+((y2-y1)**2)
+        c=d/2
+        r=r1+r2
+if c<=r:
+    return True
+else:
+    return False
+b1=tuple(int(i)for i in input("Enter x1,y1,r1").split(','))
+b2=tuple(int(i)for i in input("Enter x2,y2,r2").split(','))
+if(ball_collide(b1,b2)):
+    print("Collide")
+else:
+    print("They don't collide")
+    
+    
+'''
+Output 1:
+
+
+'''
